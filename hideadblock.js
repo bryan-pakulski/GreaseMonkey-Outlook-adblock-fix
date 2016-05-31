@@ -8,7 +8,7 @@
 // @grant       none
 // ==/UserScript==
 
-// On page load get run the function
+// On page load run the function
 window.addEventListener( 
   'DOMNodeInserted', 
   function (e)
