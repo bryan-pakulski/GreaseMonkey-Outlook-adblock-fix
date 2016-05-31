@@ -2,7 +2,7 @@
 // Created by Bryan Pakulski
 // @name        Hotmail-hideAdBlock
 // @namespace   default
-// @description Hides the "Adblocker detected" bullshit in outlook.com
+// @description Hides the "Adblocker detected" in outlook.com
 // @include     https://outlook*
 // @version     1
 // @grant       none
