@@ -1,6 +1,6 @@
-# GreaseMonkey-Outlook-adblock-fix
+# Greasemonkey Outlook Adblock Fix
 
-## Usage
+## Installation
 * Install GreaseMonkey
 * Add this script as a new user script under GreaseMonkey options
 * Profit?
