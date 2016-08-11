@@ -15,7 +15,7 @@ window.addEventListener(
   { 
    
     // Get the div that holds the adblocking content
-    var div_hide = document.getElementsByClassName('_n_i');
+    var div_hide = document.getElementsByClassName('_n_h');
 
     // Iterate through our elements and hide them
     for (var i = 0; i < div_hide.length; i++)
