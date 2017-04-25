@@ -4,7 +4,7 @@
 // @namespace   default
 // @description Hides the "Adblocker detected" in outlook.com
 // @include     https://outlook*
-// @version     1
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 
@@ -13,7 +13,10 @@ window.addEventListener(
   'DOMNodeInserted', 
   function (e)
   { 
-   
+    
+    // Bottom left "Get premium bar"
+    var div_hide2 = document.getElementsByClassName('_n_15');
+    
     // Get the div that holds the adblocking content
     var div_hide = document.getElementsByClassName('_n_h');
 
@@ -21,6 +24,11 @@ window.addEventListener(
     for (var i = 0; i < div_hide.length; i++)
     {
       div_hide[i].style.visibility = "hidden";
+    }
+    
+    for (var i = 0; i < div_hide2.length; i++)
+    {
+      div_hide2[i].style.visibility = "hidden";
     }
 
     // Get rid of the empty space left behind
