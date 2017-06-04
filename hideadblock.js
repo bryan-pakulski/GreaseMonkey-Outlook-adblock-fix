@@ -30,6 +30,13 @@ window.addEventListener(
     {
       div_hide2[i].style.visibility = "hidden";
     }
+    
+    // Minimise blank space from premium bar
+    var div_hide3 = document.getElementsByClassName('_n_X4 _n_05');
+    for (var i = 0; i < div_hide3.length; i++)
+    {
+      div_hide3[i].style.bottom = "0px";    
+    }
 
     // Get rid of the empty space left behind
     var root = document.getElementById('primaryContainer');
@@ -44,4 +51,4 @@ window.addEventListener(
     }
     
     
-  }, false);
+}, false);
