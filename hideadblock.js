@@ -15,7 +15,7 @@ window.addEventListener(
   { 
     
     // Bottom left "Get premium bar"
-    var div_hide2 = document.getElementsByClassName('_n_15');
+    var div_hide2 = document.getElementsByClassName('_n_35');
     
     // Get the div that holds the adblocking content
     var div_hide = document.getElementsByClassName('_n_h');
@@ -32,11 +32,14 @@ window.addEventListener(
     }
     
     // Minimise blank space from premium bar
-    var div_hide3 = document.getElementsByClassName('_n_X4 _n_05');
+    var div_hide3 = document.getElementsByClassName('_n_Z4 _n_25');
     for (var i = 0; i < div_hide3.length; i++)
     {
-      div_hide3[i].style.bottom = "0px";    
+      div_hide3[i].style.bottom = "60px";
+      div_hide3[i].style.zIndex = "100";
     }
+    
+    // 
 
     // Get rid of the empty space left behind
     var root = document.getElementById('primaryContainer');
