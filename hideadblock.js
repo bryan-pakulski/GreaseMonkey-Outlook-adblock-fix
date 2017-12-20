@@ -3,7 +3,8 @@
 // @name        Hotmail-hideAdBlock
 // @namespace   default
 // @description Hides the "Adblocker detected" in outlook.com
-// @include     https://outlook*
+// @exclude     https://outlook.office365*
+// @include     https://outlook.live*
 // @version     1.1.1
 // @grant       none
 // ==/UserScript==
@@ -15,7 +16,7 @@ window.addEventListener(
   { 
     
     // Bottom left "Get premium bar"
-    var div_hide2 = document.getElementsByClassName('_n_05');
+    var div_hide2 = document.getElementsByClassName('_n_15');
     
     // Get the div that holds the adblocking content
     var div_hide = document.getElementsByClassName('_n_h');
