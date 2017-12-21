@@ -5,7 +5,7 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     1.1.2
+// @version     1.1.3
 // @grant       none
 // ==/UserScript==
 
@@ -36,10 +36,10 @@ window.addEventListener(
     
     
     // Minimise blank space from premium bar
-    var div_hide3 = document.getElementsByClassName('_n_W4 _n_Z4');
+    var div_hide3 = document.getElementsByClassName('_n_X4 _n_05');
     for (var i = 0; i < div_hide3.length; i++)
     {
-      div_hide3[i].style.bottom = "60px";
+      div_hide3[i].style.bottom = "28px";
       div_hide3[i].style.zIndex = "100";
     }
 
