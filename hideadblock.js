@@ -5,13 +5,13 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     1.2.0
+// @version     1.3.0
 // @grant       none
 // ==/UserScript==
 
-var premium_bar = '_n_15';
-var adblocking = '_n_h';
-var blank_space = '_n_X4 _n_05';
+var premium_bar = '_20YsfelFmugQWgNkXdkYaF';
+var adblocking = '_2qPmszDwBfYpF7PO9Mn3KN';
+var blank_space = '6Ln7EB6KQx_JnrYdv';
 
 // On page load run the function
 window.addEventListener(
@@ -29,6 +29,7 @@ window.addEventListener(
     for (var i = 0; i < div_hide.length; i++)
     {
       div_hide[i].style.visibility = "hidden";
+      div_hide[i].style.width = "0px";
     }
 
     for (var i = 0; i < div_hide2.length; i++)
@@ -39,16 +40,8 @@ window.addEventListener(
     }
 
 
-    // Minimise blank space from premium bar
-    var div_hide3 = document.getElementsByClassName(blank_space);
-    for (var i = 0; i < div_hide3.length; i++)
-    {
-      div_hide3[i].style.bottom = "45px";
-      div_hide3[i].style.zIndex = "100";
-    }
-
     // Get rid of the empty space left behind
-    var root = document.getElementById('primaryContainer');
+    var root = document.getElementById(blank_space);
     var div_resize = root.children;
 
     for (var i = 0; i < div_resize.length; i++)
