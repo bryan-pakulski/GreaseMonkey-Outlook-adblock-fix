@@ -5,7 +5,7 @@ You know all those ugly and annoying prompts to stop using adblock on the right 
 And that little "Get Premium" button on the bottom left?
 
 Well with this little blocking script you won't have to look at them ever again, and you'll get the added bonus of freeing up some 
-screen realestate!
+screen real-estate!
 
 ## Installation
 * Install GreaseMonkey
