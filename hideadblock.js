@@ -5,13 +5,12 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     1.3.0
+// @version     1.4.0
 // @grant       none
 // ==/UserScript==
 
-var premium_bar = '_20YsfelFmugQWgNkXdkYaF';
-var adblocking = '_2qPmszDwBfYpF7PO9Mn3KN';
-var blank_space = '6Ln7EB6KQx_JnrYdv';
+var premium_bar = 'wtiMj4aqGTcmHc6px9FQq'; // On bottom left
+var adblocking = '_3a6SuYqdwIspGohT1zu16B'; // On right hand side
 
 // On page load run the function
 window.addEventListener(
@@ -38,19 +37,5 @@ window.addEventListener(
       div_hide2[i].style.height = "0px";
       div_hide2[i].style.padding = "0px";
     }
-
-
-    // Get rid of the empty space left behind
-    var root = document.getElementById(blank_space);
-    var div_resize = root.children;
-
-    for (var i = 0; i < div_resize.length; i++)
-    {
-      if (div_resize[i].hasAttribute("style"))
-      {
-        div_resize[i].style.right = "0px";
-      }
-    }
-
 
 }, false);
