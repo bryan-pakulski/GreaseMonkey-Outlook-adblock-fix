@@ -9,8 +9,8 @@
 // @grant       none
 // ==/UserScript==
 
-var premium_bar = 'wtiMj4aqGTcmHc6px9FQq'; // On bottom left
-var adblocking = '_3a6SuYqdwIspGohT1zu16B'; // On right hand side
+var premium_bar = '_3ULF2TRi4jsI2kVaIoieka'; // On bottom left
+var adblocking = '_1_ag99JsBHxI6S4FP5ayPv'; // On right hand side
 
 // On page load run the function
 window.addEventListener(
