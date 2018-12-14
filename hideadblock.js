@@ -5,7 +5,7 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     1.4.0
+// @version     1.5.0
 // @grant       none
 // ==/UserScript==
 
