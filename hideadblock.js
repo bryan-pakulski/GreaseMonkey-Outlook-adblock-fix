@@ -5,7 +5,7 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     1.6.0
+// @version     1.7.0
 // @grant       none
 // ==/UserScript==
 
@@ -18,11 +18,11 @@ window.addEventListener(
   function (e)
   {
 
-    // Bottom left "Get premium bar"
-    var div_hide2 = document.getElementsByClassName(premium_bar);
-
     // Get the div that holds the adblocking content
     var div_hide = document.getElementsByClassName(adblocking);
+
+    // Bottom left "Get premium bar"
+    var div_hide2 = document.getElementsByClassName(premium_bar);
 
     // Iterate through our elements and hide them
     for (var i = 0; i < div_hide.length; i++)
@@ -31,11 +31,7 @@ window.addEventListener(
       div_hide[i].style.width = "0px";
     }
 
-    for (var i = 0; i < div_hide2.length; i++)
-    {
-      div_hide2[i].style.visibility = "hidden";
-      div_hide2[i].style.height = "0px";
-      div_hide2[i].style.padding = "0px";
-    }
+    // Dirty delete, would be nicer with jquery
+    div_hide2[0].parentNode.removeChild(div_hide2[0]);
 
 }, false);
