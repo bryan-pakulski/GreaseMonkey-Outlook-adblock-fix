@@ -5,12 +5,12 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     1.8.0
+// @version     1.9.0
 // @grant       none
 // ==/UserScript==
 
-var premium_bar = '_2F6rWwLisyawGGg32JOcop'; // On bottom left
-var adblocking = '_3_hHr3kfEhbNYRFM5YJxH9'; // On right hand side
+var premium_bar = '_28ithXDZzMqSN0YAG2rCVn'; // On bottom left
+var adblocking = '_1fti_QgAzqGWPGlqh_FSvI'; // On right hand side
 
 // On page load run the function
 window.addEventListener(
