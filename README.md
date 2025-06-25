@@ -1,8 +1,8 @@
-# Greasemonkey Outlook Adblock Fix
-
 ## Sick of this?
-The outlook adblocker detected pop-up takes up valuable screen real-estate, this script removes the advertisements panel & recovers screen space.
- 
+The outlook AD panel detects the usage of an adblocker & takes up valuable screen real-estate, this script removes the advertisements panel all together & recovers that space.
+
+### NOTE:
+This also works as an ad blocker so it will also remove the advertisements if you aren't running ublock or other adblockers.
 
 Before                     |              After
 :-------------------------:|:-------------------------:
