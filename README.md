@@ -1,13 +1,15 @@
 # Greasemonkey Outlook Adblock Fix
 
-## What it does
-You know all those ugly and annoying prompts to stop using adblock on the right side of the screen?
-And that little "Get Premium" button on the bottom left?
+## Sick of this?
+The outlook adblocker detected pop-up takes up valuable screen real-estate: 
 
-Well with this little blocking script you won't have to look at them ever again, and you'll get the added bonus of freeing up some 
-screen real-estate!
+![image](https://github.com/user-attachments/assets/f9ef069f-16aa-4d6c-9d08-47f247103b59)
+
+This script takes back that space
+
+![image](https://github.com/user-attachments/assets/8b316d2b-f674-4304-9572-13273b1464c8)
+
 
 ## Installation
 * Install GreaseMonkey
-* Add this script as a new user script under GreaseMonkey options
-* Profit?
+* Add this script as a new user script within Greasemonkey
