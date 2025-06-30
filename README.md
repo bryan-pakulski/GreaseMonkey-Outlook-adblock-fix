@@ -1,8 +1,13 @@
-## Sick of this?
-The outlook AD panel detects the usage of an adblocker & takes up valuable screen real-estate, this script removes the advertisements panel all together & recovers that space.
+## Sick of Microsoft?
+The outlook ad panel detects takes up valuable screen real-estate, it also detects the usage of adblocking software.
+Microsoft also inserts advertisements directly into your inbox posing as unread mail. 
+
+![image](https://github.com/user-attachments/assets/3d02c5d9-6f51-4542-aa3a-2c3e206f54b5)
+
+This script removes the advertisements panel as well as the email adverts.
 
 ### NOTE:
-This also works as an ad blocker so it will also remove the advertisements if you aren't running ublock or other adblockers.
+This is a standalone script to remove the advertisements, you aren't required to be running ublock or other adblockers.
 
 Before                     |              After
 :-------------------------:|:-------------------------:
