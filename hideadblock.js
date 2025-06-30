@@ -5,13 +5,13 @@
 // @description Hides the "Adblocker detected" in outlook.com
 // @exclude     https://outlook.office365*
 // @include     https://outlook.live*
-// @version     2.0.1
+// @version     2.0.2
 // @grant       none
 // ==/UserScript==
 
-var adblocking = 'GssDD'; 				// On right hand side
-var mail_entry_child = 'm9Rge' 		    // Ads directly within mail list
-var mail_entry_parent = '.EeHm8' 	    // Top level parent for mail items
+var adblocking = 'GssDD'; 										// On right hand side
+var mail_entry_child = 'm9Rge' 									// Ads directly within mail list
+var mail_entry_parents = ['.EeHm8', '.fGEFC'] 	                // Top level parent for mail items
 
 let max_retries = 50
 let retries = 0;
@@ -52,11 +52,14 @@ function block_mail_entry_ads() {
         let ad_elements = document.getElementsByClassName(mail_entry_child);
 
         for (let ad_entry of ad_elements) {
-            let parent = ad_entry.closest(mail_entry_parent);
-            if (parent) {
-                parent.remove();
+          	
+          	for (let p of mail_entry_parents) {
+              let parent = ad_entry.closest(p);
+              if (parent) {
+                  parent.remove();
+                	console.log("Blocked mail list advertisement...");
+              }
             }
-            console.log("Blocked mail list advertisement...");
         }
     }, 500);
 
